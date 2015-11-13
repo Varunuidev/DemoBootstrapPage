@@ -13,6 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -20,7 +22,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="overflow: hidden;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -50,7 +52,67 @@
         </div>
         <!-- /.container -->
     </nav>
+    
+    <!-- Display different images in different devices -->
+    <div class="row">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+            <img class="img-responsive" src="img/Mobile%20Image.jpg" />
+            <!--Mobile-->
+        </div>
+        <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
+            <img class="img-responsive" src="img/Tablet%20Image.png" />
+            <!--Tab-->
+        </div>
+        <div class="hidden-xs hidden-sm col-md-12 hidden-lg">
+            <img class="img-responsive" src="img/Desktop%20Image.jpg" />
+            <!--Desktop-->
+        </div>
+        <div class="hidden-xs hidden-sm hidden-md col-lg-12">
+            <img class="img-responsive" src="img/Desktop%20Image.jpg" />
+        </div>
+    </div>
+    
+    <!-- re-ordering and scaffolding-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-4 col-sm-6">
+                    <div class="alert alert-warning">
+                    </div>
+                </div>
 
+                <div class=" col-md-4 col-sm-6">
+                    <div class="alert alert-info">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-sm-push-3 col-md-push-0">
+                    <div class="alert alert-danger">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Random Text to display-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-heading">Section Heading</h1>
+                    <p class="lead section-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    
+    <section>
+        <!-- Template to Display more data -->    
+    </section>
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
